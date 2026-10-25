@@ -471,4 +471,8 @@
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
     <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+    <string name="config_defaultContentCaptureService" translatable="false" />
+    <string name="config_defaultSmartspaceService" translatable="false" />
+    <string name="config_defaultContentSuggestionsService" translatable="false" />
+    <string name="config_defaultAugmentedAutofillService" translatable="false" />
 </resources>
