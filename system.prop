@@ -1,1 +1,4 @@
 ro.lunaris.maintainer=exerczz1
+
+# Animation override
+persist.sys.activity_anim_perf_override=true
