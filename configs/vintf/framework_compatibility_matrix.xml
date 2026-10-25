@@ -11,55 +11,6 @@
            <instance>widevine</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.light</name>
-        <interface>
-           <name>ILights</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.power</name>
-        <interface>
-           <name>IPower</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.sensors</name>
-        <interface>
-           <name>ISensors</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.vibrator</name>
-        <interface>
-           <name>IVibrator</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.wifi</name>
-        <interface>
-           <name>IWifi</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.wifi.hostapd</name>
-        <interface>
-           <name>IHostapd</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-       <name>android.hardware.wifi.supplicant</name>
-        <interface>
-           <name>ISupplicant</name>
-           <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl" optional="true">
        <name>android.hardware.audio.effect</name>
         <version>7.0</version>
