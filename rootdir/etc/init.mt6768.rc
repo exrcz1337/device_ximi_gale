@@ -147,6 +147,7 @@ on late-fs
     mount_all /vendor/etc/fstab.mt6768 --late
 
 on post-fs-data
+    mkdir /data/vendor/disp_pq 0777 system system
     mkdir /data/vendor 0777 nfc nfc
     mkdir /data/vendor/nfc 0777 nfc nfc
     mkdir /data/vendor/nfc_socket 0770 nfc nfc
