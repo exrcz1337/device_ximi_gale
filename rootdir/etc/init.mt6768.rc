@@ -683,6 +683,8 @@ on early-boot
     verity_update_state
 
 on boot
+    setprop vendor.ril.mtk 1
+    start vendor.ril-daemon-mtk
 
     write /proc/sys/vm/dirty_writeback_centisecs 300
     chmod 0660 /sys/power/autosleep
