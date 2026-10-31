@@ -648,6 +648,7 @@ vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqparamparser.so
 vendor/lib64/libpqpconfig.so
+vendor/lib64/libpqxmlparser.so
 vendor/lib64/mt6768/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/mt6768/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/mt6768/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so

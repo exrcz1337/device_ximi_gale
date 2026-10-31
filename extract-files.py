@@ -61,8 +61,11 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+    'vendor/lib64/libpqxmlparser.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/libmtkcam_featurepolicy.so': blob_fixup()
         .binary_regex_replace(b'\x34\xE8\x87\x40\xB9', b'\x34\x28\x02\x80\x52'),
     (
@@ -95,14 +98,11 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so') : blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/lib/hw/audio.primary.mt6768.so' : blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
+        .add_needed('libstagefright_foundation-v33.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/hw/hwcomposer.mt6768.so' : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
-    (
-        'vendor/lib/hw/audio.primary.mt6768.so',
-        'vendor/lib/librt_extamp_intf.so',
-        'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so',
-    ): blob_fixup()
+    'vendor/lib/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
